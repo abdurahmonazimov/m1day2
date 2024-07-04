@@ -1,0 +1,318 @@
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v21-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v21-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v21-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header__main_block {
+    padding-top: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__main_select_list {
+    display: flex;
+    gap: 25px;
+}
+
+.header__main_select_link {
+    font-weight: 400;
+    font-size: 20px;
+    color: #262626;
+}
+
+.header__main_list {
+    gap: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.header__menu_block_list {
+    display: flex;
+    gap: 97px;
+}
+
+.header__menu_block_link {
+    font-weight: 500;
+    font-size: 24px;
+    color: #262626;
+}
+
+.header__menu_block_link:hover {
+    font-weight: 500;
+    font-size: 24px;
+    color: #40bfff;
+}
+
+.flash_sale {
+    background-image: url(/img/sale_background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.flash_sale_title {
+    padding-top: 258px;
+    padding-bottom: 166px;
+    width: 573px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #fff;
+}
+
+.flash_sale_item {
+    width: 418px;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+    padding: 29px 22px 35px 52px;
+
+}
+
+.flash_sale_list_block {
+    display: flex;
+    
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 556px;
+}
+
+.flash_sale_item:nth-child(1) {
+    width: 418px;
+    background-color: #E5E5E5;
+}
+
+.flash_sale_item_title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #223263;
+}
+
+.flash_sale_item_cost {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    color: #40bfff;
+}
+
+.flash_sale_discount_cost {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #fb7181;
+}
+
+.flash_sale_cost_block {
+    display: flex;
+    align-items: center;
+}
+
+.discount_block {
+    display: flex;
+    align-items: center;
+}
+
+.best_seller {
+    margin-top: 329px;
+}
+
+.best_seller_title {
+    font-weight: 600;
+    font-size: 35px;
+    color: #22262a;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.best_seller_list {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-bottom: 23px;
+}
+
+.best_seller_link {
+    font-weight: 400;
+    font-size: 22px;
+    color: #262626;
+}
+
+.best_seller_link:hover {
+    color: #33a0ff;
+}
+
+.best_seller_item_img {
+    border-radius: 5px;
+    width: 299px;
+}
+
+.best_seller_item_title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #223263;
+}
+
+.best_seller_cost_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best_seller_item_cost {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0.03em;
+    color: #40bfff;
+}
+
+.best_seller_item_old_cost {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-decoration: line-through;
+    color: #9098b1;
+}
+
+.best_seller_item_discount {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fb7181;
+}
+
+.best_seller_item_block {
+    background: #ffffff;
+}
+
+.best_seller_content_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.best_seller_content_item {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.best_seller_content_item:nth-child(1),
+:nth-child(2):nth-child(3):nth-child(4) {
+    margin-bottom: 34px;
+}
+
+.best_seller_block_link {
+    font-weight: 500;
+    font-size: 20px;
+    color: #33a0ff;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
